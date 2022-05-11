@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified"
+           targetNamespace="./xml/SPCEX_DOC_KS_CASH_ADD_20200525_1" version="1"
+           xmlns="./xml/SPCEX_DOC_KS_CASH_ADD_20200525_1"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SPCEX_DOC" type="SPCEX_DOCType"/>
+  <xs:complexType name="DOCUMENTType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="AUTHOR"/>
+        <xs:attribute type="xs:string" name="DOC_DATE"/>
+        <xs:attribute type="xs:string" name="DOC_TIME"/>
+        <xs:attribute type="xs:string" name="DOC_NAME"/>
+        <xs:attribute type="xs:string" name="DOC_VER"/>
+        <xs:attribute type="xs:string" name="DOC_TYPE_ID"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CASH_ADDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="FIRMNAME"/>
+        <xs:attribute type="xs:string" name="FIRMID"/>
+        <xs:attribute type="xs:string" name="ACCOUNT"/>
+        <xs:attribute type="xs:string" name="ADD_SUM"/>
+        <xs:attribute type="xs:string" name="CURRENCY"/>
+        <xs:attribute type="xs:string" name="STATUS"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="KS_CASH_ADDType">
+    <xs:sequence>
+      <xs:element type="CASH_ADDType" name="CASH_ADD"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SPCEX_DOCType">
+    <xs:sequence>
+      <xs:element type="DOCUMENTType" name="DOCUMENT"/>
+      <xs:element type="KS_CASH_ADDType" name="KS_CASH_ADD"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

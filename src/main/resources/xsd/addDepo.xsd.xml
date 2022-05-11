@@ -1,0 +1,9 @@
+<spc:SPCEX_DOC xmlns:spc="./xml/SPCEX_DOC_KS_DEPO_ADD_20200525_1">
+  e
+  <spc:DOCUMENT AUTHOR="string" DOC_DATE="string" DOC_TIME="string" DOC_NAME="string" DOC_VER="string" DOC_TYPE_ID="string">string</spc:DOCUMENT>
+  gero
+  <spc:KS_DEPO_ADD>
+    <spc:DEPO_ADD FIRMNAME="string" FIRMID="string" DEPOSITARY="string" ACCOUNT="string" SECURITYID="string" ADD_QUANTITY="string" STATUS="string">string</spc:DEPO_ADD>
+  </spc:KS_DEPO_ADD>
+  cum
+</spc:SPCEX_DOC>
