@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+        xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:annox="http://annox.dev.java.net"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/jaxb "
+        version="2.1">
+    <jaxb:globalBindings>
+        <xjc:serializable uid="1"/>
+    </jaxb:globalBindings>
+
+    <jaxb:bindings schemaLocation="../xsd/addCash.xsd">
+        <jaxb:schemaBindings>
+            <jaxb:package name="xsd2java.cashAdd"/>
+        </jaxb:schemaBindings>
+        <jaxb:bindings node="xs:complexType[@name='SPCEX_DOCType']">
+            <annox:annotate>
+                <annox:annotate annox:class="javax.xml.bind.annotation.XmlRootElement"
+                                name="SPCEX_DOC"/>
+            </annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+
+    <jaxb:bindings schemaLocation="../xsd/addDepo.xsd">
+        <jaxb:schemaBindings>
+            <jaxb:package name="xsd2java.depoAdd"/>
+        </jaxb:schemaBindings>
+        <jaxb:bindings node="xs:complexType[@name='SPCEX_DOCType']">
+            <annox:annotateClass>@javax.xml.bind.annotation.XmlRootElement(name="SPCEX_DOC")</annox:annotateClass>
+        </jaxb:bindings>
+    </jaxb:bindings>
+
+</jaxb:bindings>

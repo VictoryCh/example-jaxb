@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<SPCEX_DOC>
+    <DOCUMENT AUTHOR="Фамилия И.О." DOC_DATE="2020-05-25" DOC_TIME="14:52:53" DOC_NAME="Информация о дозачислении ценных бумаг УТ" 
+              DOC_VER="1.0" DOC_TYPE_ID="KS_DEPO_ADD" />
+			  
+    <KS_CASH_ADD>
+            <CASH_ADD FIRMNAME="cvava" FIRMID="777" ACCOUNT="30411800000001234" ADD_SUM="120500000.00" CURRENCY="RUB" STATUS=""/>
+    </KS_CASH_ADD>
+   
+</SPCEX_DOC>
